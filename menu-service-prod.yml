@@ -5,4 +5,7 @@ spring:
     password: ${DB_PASSWORD}
     url: ${DB_URL}
   jpa:
-    show_sql: false # Выключаем показ sql запросов
+    properties:
+      hibernate:
+        # Выключаем показ sql запросов
+        show_sql: false

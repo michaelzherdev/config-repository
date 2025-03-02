@@ -4,3 +4,9 @@ external:
   review-service-url: ${REVIEW_SERVICE_URL}
   # Увеличиваем таймаут
   default-timeout: 5s
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
